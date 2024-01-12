@@ -10,4 +10,4 @@ else
 
 fi
 done
-
+hello we will update lvm extend script after some time 
