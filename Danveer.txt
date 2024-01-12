@@ -1,1 +1,5 @@
 hello Danveer dagar
+ls -a
+df -Th
+lsblk
+
