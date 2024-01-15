@@ -6,5 +6,10 @@ then
         echo "$name is already exist "
 else
         echo " We are going to create given user "
+        useradd $name
+read -p "give your passwdord : " password
+echo $password | passwd --stdin $name
+id $name
+
 fi
 
