@@ -1,5 +1,10 @@
-hello Danveer dagar
-ls -a
-df -Th
-lsblk
+#!/bin/bash
+read -p "Give your user name : " name
+user=` cat /etc/passwd | cut -d ':' -f1 | grep "$name"`
+if [ "$user" = "$name" ]
+then
+        echo "$name is already exist "
+else
+        echo " We are going to create given user "
+fi
 
